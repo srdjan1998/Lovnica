@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <img id="burger" src="../burger.png" alt="">
+    <header>
+      <h1>Манастир Ловница</h1>
+      <ul>
+        <li><a href="../index.html">Почетна</a></li>
+        <li id="drop"><a href="oManastiru.html">О манастиру</a></li>
+        <ul id="drop-menu">
+          <li><a href="#">Оснивање</a></li>
+          <li><a href="#">Историја</a></li>
+          <li><a href="#">Монаси</a></li>
+        </ul>
+        <li><a href="galerija.html">Галерија</a></li>
+        <li><a href="kontakt.html">Контакт</a></li>
+      </ul>
+    </header>
+    <main id="kontaktMain">
+      <form name="forma" >
+        <h2>Пишите нам</h2>
+        <input type="text" name="ime" placeholder="Ваше име:">
+        <input type="email" name="email" placeholder="Ваш email:">
+        <textarea name="poruka" rows="8" cols="80" placeholder="Вашa порука:"></textarea>
+        <input type="reset" name="" value="Поништи">
+        <input type="button" onclick="provera()" value="Потврди">
+        <br>
+        
+      </form>
+      <div id="obavestenje"></div>
+    </main>
+    <script src="../skripte/provera.js"></script>
+  </body>
+</html>
